@@ -16,6 +16,6 @@ class Nodo
     end
 
     def to_S 
-        puts "Nodo #{@x} con info #{@info}"
+        return "Nodo #{@x} con info #{@info}"
     end
 end

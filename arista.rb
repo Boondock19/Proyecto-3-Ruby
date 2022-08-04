@@ -24,7 +24,7 @@ class Arista
     def to_S
         @infoX = @x.get_Info
         @infoY = @y.get_Info
-        puts "#{@idX},#{@infoX}-#{@idY},#{@infoY}"
+        return "(#{@idX},#{@infoX}-#{@idY},#{@infoY})"
     end
 
 end
