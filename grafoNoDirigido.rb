@@ -4,7 +4,7 @@ class GrafoNoDirigido
         @n = n
         @grafo = Array.new(@n) { Array.new() }
         @nodos = Array.new(@n)
-        @aristas = array.new()
+        @aristas = Array.new()
     end
 
     def agregarNodo(nodo)
@@ -28,6 +28,10 @@ class GrafoNoDirigido
 
     def get_Nodo(id)
         return @nodos[id]
+    end
+
+    def get_Aristas
+        return @aristas
     end
 
     def agregarArista(arista)
