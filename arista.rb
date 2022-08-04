@@ -2,8 +2,10 @@ require_relative "nodo.rb"
 class Arista
 
     def initialize(x, y)
-        @x = x.get_X
-        @y = y.get_X
+        @idX = x.get_X
+        @idY = y.get_X
+        @x = x
+        @y = y
     end
 
     def elOtroNodo(w) 
@@ -15,7 +17,9 @@ class Arista
     end
     
     def to_S
-        puts "#{@x},#{@x.get_Info}-#{@y},#{@y.get_Info}"
+        @infoX = @x.get_Info
+        @infoY = @y.get_Info
+        puts "#{@idX},#{@infoX}-#{@idY},#{@infoY}"
     end
 
 end
