@@ -8,11 +8,16 @@ class Arista
         @y = y
     end
 
+    
+    def cualquieraDeLosNodos()
+        return @idX
+    end
+
     def elOtroNodo(w) 
-        if w == @x
-            return @y
+        if w == @idX
+            return @idY
         else
-            return @x
+            return @idX
         end
     end
     
