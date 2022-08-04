@@ -4,6 +4,7 @@ class GrafoNoDirigido
         @n = n
         @grafo = Array.new(@n) { Array.new() }
         @nodos = Array.new(@n)
+        @aristas = array.new()
     end
 
     def agregarNodo(nodo)
@@ -35,6 +36,7 @@ class GrafoNoDirigido
         else
             @grafo[arista.cualquieraDeLosNodos].push(arista)
             @grafo[arista.elOtroNodo(arista.cualquieraDeLosNodos)].push(arista)
+            @aristas.push(arista)
         end
     end
 
