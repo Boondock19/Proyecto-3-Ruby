@@ -1,8 +1,10 @@
 class Nodo 
 
-    def initialize(x,info)
-        @x = x
+    @@contador = 0
+    def initialize(info)
+        @x = @@contador
         @info = info
+        @@contador += 1
     end
 
     def get_X
