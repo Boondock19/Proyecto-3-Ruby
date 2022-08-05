@@ -80,7 +80,7 @@ class GrafoNoDirigido
     end
 
     # Metodo que para reiniciar el contador de nodos.
-    # @return [Arista]
+    
     def resetNodos 
         Nodo.new("").reset
     end

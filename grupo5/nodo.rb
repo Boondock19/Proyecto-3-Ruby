@@ -41,7 +41,7 @@ class Nodo
     end
 
     # Metodo para reiniciar el contador de nodos.
-    # @return String
+    
     def reset
         @@contador = 0
     end
