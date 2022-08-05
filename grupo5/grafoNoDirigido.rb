@@ -78,4 +78,10 @@ class GrafoNoDirigido
     def adyacentes(nodo)
         return @grafo[nodo.get_X]
     end
+
+    # Metodo que para reiniciar el contador de nodos.
+    # @return [Arista]
+    def resetNodos 
+        Nodo.new("").reset
+    end
 end

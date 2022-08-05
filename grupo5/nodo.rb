@@ -39,4 +39,10 @@ class Nodo
     def to_S 
         return "Nodo #{@x} con info #{@info}"
     end
+
+    # Metodo para reiniciar el contador de nodos.
+    # @return String
+    def reset
+        @@contador = 0
+    end
 end

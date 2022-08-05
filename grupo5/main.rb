@@ -11,7 +11,7 @@ require_relative "DFS.rb"
 
 opcion = ""
 
-puts "Bienvenido al programa de busqueda en profundidad"
+puts "Bienvenido al programa de búsqueda en profundidad"
 puts "Se  le presentara un menu de opciones , por favor inserte el numero de la opcion"
 puts "Por ejemplo si desea inicializar el grafo coloque 1."
 while opcion != "5"
@@ -32,6 +32,7 @@ while opcion != "5"
         puts "\nDiga la cantidad de nodos del grafo\n"
         cantidad = gets.chomp
         grafo = GrafoNoDirigido.new(cantidad.to_i)
+        grafo.resetNodos
         puts "Grafo inicializado, por favor agregue nodos"
     when "2"
         puts "\nIngrese la informacion del nodo\n"

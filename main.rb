@@ -32,6 +32,7 @@ while opcion != "5"
         puts "\nDiga la cantidad de nodos del grafo\n"
         cantidad = gets.chomp
         grafo = GrafoNoDirigido.new(cantidad.to_i)
+        grafo.resetNodos
         puts "Grafo inicializado, por favor agregue nodos"
     when "2"
         puts "\nIngrese la informacion del nodo\n"
