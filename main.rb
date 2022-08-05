@@ -3,6 +3,10 @@ require_relative "arista.rb"
 require_relative "grafoNoDirigido.rb"
 require_relative "DFS.rb"
 
+# Ana Sofia Santos C  17-10602
+# Jose Matias Gonzalez V 15-10627
+
+# Archivo Main que se encargara de ejecutar el cliente para el DFS
 
 
 opcion = ""
